@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Turbo Car Semi-novos</title>
+
+  <link rel="icon" type="image/png" href="imagens/logo.png">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Seu CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Turbo Car Semi-novos </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cadastro.html">Cadastro</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3"></button>
+  </div>
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="imagens/sala.png" class="d-block w-100" style="height: 400px; object-fit: cover;">
+      <div class="carousel-caption">
+        <h2>Turbo Car</h2>
+        <p>Seu lugar para seminovos, autopeças, conserto e lavagem.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="imagens/cons.png" class="d-block w-100" style="height: 400px; object-fit: cover;">
+      <div class="carousel-caption">
+        <h2>Atendimento de qualidade</h2>
+        <p>Ambiente preparado para receber nossos clientes com conforto.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="imagens/auto.png" class="d-block w-100" style="height: 400px; object-fit: cover;">
+      <div class="carousel-caption">
+        <h2>Serviços completos</h2>
+        <p>Lavagem, manutenção e venda de peças em um só lugar.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="imagens/lav.png" class="d-block w-100" style="height: 400px; object-fit: cover;">
+      <div class="carousel-caption">
+        <h2>Serviço seguro</h2>
+        <p>Transparência e segurança em cada negociação</p>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+
+  <!-- Apresentação -->
+  <section class="hero text-center py-5">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Bem-vindo à Turbo Car Semi-novos</h1>
+      <p class="lead mt-3">
+        Trabalhamos com carros seminovos, autopeças, consertos e lavagem automotiva.
+      </p>
+      <a href="cadastro.html" class="btn btn-primary btn-lg mt-3">Faça seu cadastro</a>
+    </div>
+  </section>
+
+  <!-- Sobre a empresa -->
+  <section class="container py-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Sobre a empresa</h2>
+        <p>
+          A Turbo Car Semi-novos é uma empresa especializada em oferecer
+          veículos seminovos de qualidade, além de serviços de manutenção,
+          lavagem e venda de peças automotivas.
+        </p>
+        <p>
+          Nosso objetivo é atender cada cliente com confiança, qualidade e bom atendimento.
+        </p>
+      </div>
+
+      <div class="col-md-6">
+        <h2>Contato</h2>
+        <p><strong>Telefone:</strong> (21) 9876-0880</p>
+        <p><strong>E-mail:</strong> contato@Turbocar.com</p>
+        <p><strong>Endereço:</strong> Rua Mato Grosso, 123 - Duque de Caxias</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section class="container pb-5">
+    <h2 class="text-center mb-4">Nossos serviços</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-3">
+        <a href="#carros" class="text-decoration-none text-dark">
+          <div class="card h-100 shadow-sm">
+            <img src="imagens/img1.webp" class="card-img-top" alt="Carros Seminovos">
+            <div class="card-body">
+              <h5 class="card-title">Carros Seminovos</h5>
+              <p class="card-text">Veículos revisados e prontos para você.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <a href="#autopecas" class="text-decoration-none text-dark">
+          <div class="card h-100 shadow-sm">
+            <img src="imagens/img2.jpg" class="card-img-top" alt="Autopeças">
+            <div class="card-body">
+              <h5 class="card-title">Autopeças</h5>
+              <p class="card-text">Peças de qualidade para diferentes modelos.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <a href="#consertos" class="text-decoration-none text-dark">
+          <div class="card h-100 shadow-sm">
+            <img src="imagens/img4.webp" class="card-img-top" alt="Consertos">
+            <div class="card-body">
+              <h5 class="card-title">Consertos</h5>
+              <p class="card-text">Serviços mecânicos com atenção e segurança.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <a href="#lavagem" class="text-decoration-none text-dark">
+          <div class="card h-100 shadow-sm">
+            <img src="imagens/img3.webp" class="card-img-top" alt="Lavagem">
+            <div class="card-body">
+              <h5 class="card-title">Lavagem</h5>
+              <p class="card-text">Serviço de lavagem automotiva para deixar seu carro impecável.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+<!-- Catálogo de carros -->
+<section id="carros" class="container py-5">
+<h2 class="text-center mb-5">Carros em destaque</h2>
+
+<div class="row g-4">
+
+<div class="col-md-6 col-lg-4">
+<div class="card h-100 shadow">
+<img src="imagens/civic.png"
+class="card-img-top"
+style="height: 220px; object-fit: cover;">
+
+<div class="card-body">
+<h5>Honda Civic Touring 2020</h5>
+
+<p>
+Automático<br>
+42 mil km<br>
+Completo
+</p>
+
+<h4 class="text-danger">R$ 89.900</h4>
+
+<p>48x de R$ 2.150</p>
+
+<button class="btn btn-dark w-100 mb-2"
+data-bs-toggle="modal"
+data-bs-target="#financiamentoModal"
+onclick="mudarTitulo('Solicitação de financiamento')">
+Simular financiamento
+</button>
+
+<button class="btn btn-danger w-100 mb-2"
+data-bs-toggle="modal"
+data-bs-target="#financiamentoModal"
+onclick="mudarTitulo('Solicitação de financiamento')">
+Tenho interesse
+</button>
+
+<a href="#agendamento" class="btn btn-outline-dark w-100">
+Agendar visita
+</a>
+
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+<div class="card h-100 shadow">
+<img src="imagens/corolla.png"
+class="card-img-top"
+style="height: 220px; object-fit: cover;">
+
+<div class="card-body">
+<h5>Toyota Corolla XEI 2021</h5>
+
+<p>
+Automático<br>
+35 mil km<br>
+Banco em couro
+</p>
+
+<h4 class="text-danger">R$ 98.900</h4>
+
+<p>48x de R$ 2.390</p>
+
+<button class="btn btn-dark w-100 mb-2"
+data-bs-toggle="modal"
+data-bs-target="#financiamentoModal"
+onclick="mudarTitulo('Solicitação de financiamento')">
+Simular financiamento
+</button>
+
+<button class="btn btn-danger w-100 mb-2"
+data-bs-toggle="modal"
+data-bs-target="#financiamentoModal"
+onclick="mudarTitulo('Solicitação de financiamento')">
+Tenho interesse
+</button>
+
+<a href="#agendamento" class="btn btn-outline-dark w-100">
+Agendar visita
+</a>
+
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+<div class="card h-100 shadow">
+<img src="imagens/hb20.png"
+class="card-img-top"
+style="height: 220px; object-fit: cover;">
+
+<div class="card-body">
+<h5>HB20 Comfort 2022</h5>
+
+<p>
+Manual<br>
+18 mil km<br>
+Econômico
+</p>
+
+<h4 class="text-danger">R$ 67.900</h4>
+
+<p>48x de R$ 1.590</p>
+
+<button class="btn btn-dark w-100 mb-2"
+data-bs-toggle="modal"
+data-bs-target="#financiamentoModal"
+onclick="mudarTitulo('Solicitação de financiamento')">
+Simular financiamento
+</button>
+
+<button class="btn btn-danger w-100 mb-2"
+data-bs-toggle="modal"
+data-bs-target="#financiamentoModal"
+onclick="mudarTitulo('Solicitação de financiamento')">
+Tenho interesse
+</button>
+
+<a href="#agendamento" class="btn btn-outline-dark w-100">
+Agendar visita
+</a>
+
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- Lavagem -->
+<section id="lavagem" class="bg-light py-5">
+<div class="container">
+
+<h2 class="text-center mb-5">Lavagem automotiva</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card h-100 shadow-sm">
+<div class="card-body">
+
+<h5>Lavagem simples</h5>
+
+<p>
+Lavagem externa completa com secagem.
+</p>
+
+<h4 class="text-primary">R$ 40</h4>
+
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card h-100 shadow-sm">
+<div class="card-body">
+
+<h5>Lavagem completa</h5>
+
+<p>
+Lavagem externa e interna com aspiração.
+</p>
+
+<h4 class="text-primary">R$ 80</h4>
+
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card h-100 shadow-sm">
+<div class="card-body">
+
+<h5>Higienização interna</h5>
+
+<p>
+Limpeza profunda de bancos e carpetes.
+</p>
+
+<h4 class="text-primary">R$ 150</h4>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Autopeças -->
+<section id="autopecas" class="container py-5">
+
+<h2 class="text-center mb-5">Autopeças</h2>
+
+<div class="table-responsive">
+
+<table class="table table-striped table-bordered">
+
+<thead class="table-dark">
+
+<tr>
+<th>Peça</th>
+<th>Valor</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Pastilha de freio</td>
+<td>R$ 120</td>
+</tr>
+
+<tr>
+<td>Bateria automotiva</td>
+<td>R$ 450</td>
+</tr>
+
+<tr>
+<td>Filtro de ar</td>
+<td>R$ 40</td>
+</tr>
+
+<tr>
+<td>Óleo de motor</td>
+<td>R$ 50</td>
+</tr>
+
+<tr>
+<td>Pneu aro 15</td>
+<td>R$ 380</td>
+</tr>
+
+</tbody>
+</table>
+
+</div>
+
+<p class="text-center">
+Valores sujeitos a alteração conforme o modelo do veículo.
+</p>
+
+</section>
+
+<!-- Consertos -->
+<section id="consertos" class="bg-dark text-white py-5">
+
+<div class="container">
+
+<h2 class="text-center mb-5">Consertos automotivos</h2>
+
+<div class="row text-center g-4">
+
+<div class="col-md-3">
+<div class="p-4 border rounded">
+<h5>Troca de óleo</h5>
+<p>A partir de R$ 120</p>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="p-4 border rounded">
+<h5>Freios</h5>
+<p>A partir de R$ 180</p>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="p-4 border rounded">
+<h5>Suspensão</h5>
+<p>A partir de R$ 250</p>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="p-4 border rounded">
+<h5>Motor</h5>
+<p>Consultar orçamento</p>
+</div>
+</div>
+
+</div>
+
+<div class="text-center mt-5">
+
+<p>
+Cada veículo possui necessidades diferentes.
+Entre em contato para detalhar a situação.
+</p>
+
+<button class="btn btn-danger"
+data-bs-toggle="modal"
+data-bs-target="#financiamentoModal"
+onclick="mudarTitulo('Solicitação de orçamento')">
+Solicitar orçamento
+</button>
+
+</div>
+
+</div>
+</section>
+
+<!-- Agendar visita -->
+<section id="agendamento" class="container py-5">
+
+<h2 class="text-center mb-5">Agendar visita</h2>
+
+<form id="formVisita" class="row g-4">
+<div class="col-md-6">
+<input type="text"
+class="form-control"
+placeholder="Nome completo" required>
+</div>
+
+<div class="col-md-6">
+<input type="tel"
+class="form-control"
+placeholder="Telefone" required>
+</div>
+
+<div class="col-md-6">
+<input type="text"
+class="form-control"
+placeholder="Carro desejado" required> 
+</div>
+
+<div class="col-md-3">
+<input type="date"
+class="form-control" required>
+</div>
+
+<div class="col-md-3">
+<input type="time"
+class="form-control" required>
+</div>
+
+<div class="col-12">
+
+<div id="mensagemVisita"
+class="alert alert-success d-none text-center"
+role="alert">
+
+Visita agendada com sucesso! Entraremos em contato para confirmar.
+
+</div>
+
+<div class="text-center">
+
+<button type="button"
+class="btn btn-dark btn-lg"
+onclick="agendarVisita()">
+
+Agendar visita
+
+</button>
+
+</div>
+
+</div>
+
+</form>
+
+</section>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2026 Turbo Car Semi-novos - Todos os direitos reservados.</p>
+  </footer>
+
+<!-- Modal -->
+<div class="modal fade"
+id="financiamentoModal"
+tabindex="-1">
+
+<div class="modal-dialog">
+
+<div class="modal-content">
+
+<div class="modal-header">
+
+<h5 class="modal-title" id="tituloModal">
+Solicitação de financiamento
+</h5>
+
+<button type="button"
+class="btn-close"
+data-bs-dismiss="modal">
+</button>
+
+</div>
+
+<div class="modal-body">
+<div id="mensagemSucesso" class="alert alert-success d-none" role="alert">
+Solicitação enviada com sucesso! A Turbo Car entrará em contato em breve.
+</div>
+
+<form id="formSolicitacao">
+  <div class="mb-3">
+<input type="text"
+class="form-control"
+placeholder="Nome completo" required>
+</div>
+
+<div class="mb-3">
+<input type="email"
+class="form-control"
+placeholder="E-mail" required>
+</div>
+
+<div class="mb-3">
+<input type="text"
+class="form-control"
+placeholder="CPF" required>
+</div>
+
+<div class="mb-3">
+<input type="text"
+class="form-control"
+placeholder="CEP" required>
+</div>
+
+<div class="mb-3">
+<input type="tel"
+class="form-control"
+placeholder="Telefone" required>
+</div>
+
+<div class="form-check">
+<input class="form-check-input"
+type="radio"
+name="contato">
+
+<label class="form-check-label">
+Prefiro contato via WhatsApp
+</label>
+</div>
+
+<div class="form-check mb-3">
+<input class="form-check-input"
+type="radio"
+name="contato">
+
+<label class="form-check-label">
+Prefiro contato via E-mail
+</label>
+</div>
+
+<a href="cadastro.html"
+class="btn btn-outline-primary w-100 mb-2">
+Prefiro fazer um cadastro completo
+</a>
+
+<button type="button" class="btn btn-dark w-100" onclick="enviarSolicitacao()">
+Enviar solicitação
+</button>
+
+</form>
+
+</div>
+</div>
+</div>
+</div>
+
+ <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+function mudarTitulo(texto){
+  document.getElementById("tituloModal").innerText = texto;
+}
+
+function enviarSolicitacao(){
+  var formulario = document.getElementById("formSolicitacao");
+
+  if(!formulario.checkValidity()){
+    formulario.reportValidity();
+    return;
+  }
+
+  document.getElementById("mensagemSucesso").classList.remove("d-none");
+
+  setTimeout(function(){
+    var modalElemento = document.getElementById("financiamentoModal");
+    var modal = bootstrap.Modal.getInstance(modalElemento);
+
+    if(modal){
+      modal.hide();
+    }
+
+    document.getElementById("mensagemSucesso").classList.add("d-none");
+    formulario.reset();
+
+    setTimeout(function(){
+      document.body.classList.remove("modal-open");
+      document.body.style.overflow = "auto";
+      document.body.style.paddingRight = "0px";
+
+      var fundos = document.querySelectorAll(".modal-backdrop");
+
+      fundos.forEach(function(fundo){
+        fundo.remove();
+      });
+    }, 500);
+
+  }, 2000);
+}
+
+function agendarVisita(){
+  var formulario = document.getElementById("formVisita");
+
+  if(!formulario.checkValidity()){
+    formulario.reportValidity();
+    return;
+  }
+
+  document.getElementById("mensagemVisita").classList.remove("d-none");
+
+  setTimeout(function(){
+    document.getElementById("mensagemVisita").classList.add("d-none");
+    formulario.reset();
+  }, 3000);
+}
+</script>
+</body>
+</html>
