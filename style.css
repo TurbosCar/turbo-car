@@ -1,26 +1,35 @@
+
+/* ===== ESTILO GERAL ===== */
 body {
   background-color: #f8f9fa;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+/* ===== TÍTULOS ===== */
+h1,
+h2,
+h5 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* ===== DESTAQUE PRINCIPAL ===== */
 .hero {
-  background: linear-gradient(135deg, #3c1a1a, #744a14);
-  color: rgb(255, 255, 255);
+  background: linear-gradient(135deg, #2b0000, #8b5a00);
+  color: white;
 }
 
-h1, h2, h5 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
+/* ===== CARDS ===== */
 .card {
-  border-radius: 12px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.btn-primary {
-  border-radius: 10px;
-}
-
-footer {
-  margin-top: 30px;
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .card-img-top {
@@ -28,11 +37,471 @@ footer {
   object-fit: cover;
 }
 
+/* ===== BOTÕES ===== */
 .btn-primary {
-  background-color: #7241bd;
+  background-color: #4a1717;
   border: none;
+  border-radius: 10px;
 }
 
 .btn-primary:hover {
-  background-color: #1a054e;
+  background-color: #403c48;
+}
+
+.btn-dark {
+  background-color: #111;
+}
+
+.btn-dark:hover {
+  background-color: #c00000;
+}
+
+/* ===== CARROSSEL ===== */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* ===== MENU DE NAVEGAÇÃO ===== */
+.navbar {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ===== EFEITO DO MENU ===== */
+.navbar .nav-link {
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 2px 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  background-color: #e2e2e2;
+  color: #212529;
+}
+
+/* Item da página atual, se estiver marcado como ativo */
+.navbar .nav-link.active {
+  background-color: #e2e2e2;
+  color: #212529;
+}
+
+
+/* ===== FILTROS DE CATEGORIAS ===== */
+.filtro-categoria {
+  margin: 4px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.filtro-categoria:hover {
+  transform: translateY(-2px);
+}
+
+/* ===== AUTOPEÇAS ===== */
+#autopecas .card {
+  height: 100%;
+}
+
+#autopecas .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+#autopecas .card-title {
+  font-weight: 600;
+}
+
+#autopecas .preco {
+  color: #c00000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: auto;
+}
+
+/* ===== CONTADOR DO CARRINHO ===== */
+#quantidadeCarrinho,
+#quantidadeCarrinhoMenu {
+  font-weight: bold;
+}
+
+/* ===== TABELAS E CARRINHO ===== */
+table {
+  background-color: white;
+}
+
+.table {
+  vertical-align: middle;
+}
+
+.table img {
+  max-width: 80px;
+  border-radius: 8px;
+}
+
+#totalCarrinho {
+  color: #c00000;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+/* ===== FORMULÁRIOS ===== */
+input,
+select,
+textarea {
+  border-radius: 8px !important;
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+  margin-top: 30px;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+  .carousel-caption {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+
+  .card-img-top {
+    height: 160px;
+  }
+
+  .filtro-categoria {
+    margin: 3px;
+    font-size: 0.85rem;
+  }
+
+  .table {
+    font-size: 0.9rem;
+  }
+}
+
+/* ===== CONSERTOS AUTOMOTIVOS ===== */
+.consertos-section {
+  background-color: #f8f9fa;
+}
+
+.consertos-section .card {
+  height: 100%;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+}
+
+.consertos-section .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.consertos-section .card-title {
+  font-weight: 600;
+  color: #212529;
+}
+
+.consertos-section .conserto-categoria {
+  font-size: 0.78rem;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 6px 10px;
+  background-color: #eee8f8;
+  color: #583393;
+}
+
+.consertos-section .conserto-preco {
+  color: #c00000;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.consertos-section .conserto-detalhes {
+  border-top: 1px solid #eee;
+  margin-top: 12px;
+  padding-top: 12px;
+  color: #555;
+  font-size: 0.92rem;
+}
+
+.consertos-section .btn-orcamento {
+  background-color: #111;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.consertos-section .btn-orcamento:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.consertos-section .btn-detalhes {
+  border-radius: 10px;
+}
+
+.filtro-conserto {
+  border-radius: 20px;
+  transition: background-color 0.2s ease;
+}
+
+.filtro-conserto:hover {
+  transform: translateY(-2px);
+}
+
+/* Catálogo de veículos Turbo Car */
+.filtros-carros {
+  padding: 20px;
+  border: 1px solid #dedede;
+  border-radius: 12px;
+}
+
+.imagem-veiculo-catalogo {
+  height: 210px;
+  width: 100%;
+  object-fit: cover;
+  background: #eeeeee;
+}
+
+.placeholder-veiculo {
+  height: 210px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #eeeeee, #d7d7d7);
+  color: #444444;
+}
+
+.placeholder-veiculo .icone-carro {
+  font-size: 64px;
+  line-height: 1.2;
+}
+
+.placeholder-veiculo small {
+  font-size: 12px;
+}
+
+.card-veiculo-catalogo {
+  height: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-veiculo-catalogo:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.card-veiculo-catalogo .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-veiculo-catalogo .botoes-veiculo {
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+.card-veiculo-catalogo .preco-veiculo {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+@media (max-width: 576px) {
+  .filtros-carros {
+    padding: 14px;
+  }
+
+  .imagem-veiculo-catalogo,
+  .placeholder-veiculo {
+    height: 190px;
+  }
+
+  .card-veiculo-catalogo .botoes-veiculo .btn {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
+
+/* Card premium da seção Agendar visita */
+#agendamento .agendamento-card {
+  background: #f7f7f8;
+  border: 1px solid #e2e2e5;
+  border-radius: 18px;
+  padding: 40px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
+}
+
+/* Título da seção */
+#agendamento h2 {
+  color: #222;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Campos do formulário */
+#agendamento .form-control {
+  border: 1px solid #d8d8dc;
+  border-radius: 9px;
+  padding: 13px 15px;
+  background: #fff;
+  color: #222;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Destaque ao selecionar um campo */
+#agendamento .form-control:focus {
+  border-color: #b82025;
+  box-shadow: 0 0 0 3px rgba(184, 32, 37, 0.10);
+}
+
+/* Botão de agendamento */
+#agendamento .btn-dark {
+  border-radius: 9px;
+  padding: 13px 32px;
+  font-weight: 600;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+#agendamento .btn-dark:hover {
+  background-color: #b82025;
+  border-color: #b82025;
+  transform: translateY(-1px);
+}
+
+/* Ajuste para celulares */
+@media (max-width: 576px) {
+  #agendamento .agendamento-card {
+    padding: 24px 18px;
+    border-radius: 14px;
+  }
+}
+
+/* ===== CARD DE CONFIRMAÇÃO DA TURBO CAR ===== */
+
+.confirmacao-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(12, 12, 12, 0.72);
+  backdrop-filter: blur(5px);
+}
+
+.confirmacao-overlay.d-none {
+  display: none !important;
+}
+
+.confirmacao-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 34px 28px;
+  background: #ffffff;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+  animation: entradaConfirmacao 0.3s ease-out;
+}
+
+.confirmacao-icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #e7f8ee;
+  color: #168348;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.confirmacao-card h2 {
+  margin: 0 0 12px;
+  color: #202020;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.confirmacao-descricao {
+  margin-bottom: 22px;
+  color: #666666;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.confirmacao-detalhes {
+  margin-bottom: 24px;
+  padding: 16px;
+  border: 1px solid #eeeeee;
+  border-radius: 12px;
+  background: #f8f8f8;
+  overflow-wrap: anywhere;
+}
+
+.confirmacao-detalhes strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #c90016;
+  font-size: 16px;
+}
+
+.confirmacao-detalhes p {
+  margin: 0;
+  color: #626262;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.btn-continuar {
+  width: 100%;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #c90016;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn-continuar:hover {
+  background: #a80012;
+  transform: translateY(-1px);
+}
+
+.btn-continuar:focus-visible {
+  outline: 3px solid #777777;
+  outline-offset: 3px;
+}
+
+@keyframes entradaConfirmacao {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 480px) {
+  .confirmacao-card {
+    padding: 28px 20px;
+  }
+
+  .confirmacao-card h2 {
+    font-size: 23px;
+  }
 }
