@@ -1,4 +1,0 @@
-auto.png
-cons.png
-lav.png
-sala.png
